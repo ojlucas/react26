@@ -2,7 +2,7 @@
   "name": "cursoreact2026",
   "private": true,
   "version": "0.0.0",
-  "homepage": ".",  
+  "homepage": ".",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.15.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

@@ -1,19 +1,21 @@
 
 import "./Header.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
 
-    const links = ["Inicio", "Productos", "Contacto"];
+    const links = [ "Productos", "Contacto"];
 
 	return <header className="header">
     <div className="header-container">
-      <a href="#inicio" className="logo">React dMODA </a>	
+      <Link to="/" className="logo">React dMODA </Link>	
       <nav className="nav">
         <ul className="nav-list">
+          <li key="0"><Link to="/" className="nav-link">Inicio</Link></li>
+          <li key="1"><Link to="/productos" className="nav-link">Productos</Link></li>
+          <li key="2"><Link to="/contacto" className="nav-link">Contacto</Link></li>
 			
-		  {links.map((link, index) => (
-		<li key={index}><a href={`#${link.toLowerCase()}`} className="nav-link">{link}</a></li>
-		))}       
+		     
           <li>
             <button className="cart-btn" id="cartBtn">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
