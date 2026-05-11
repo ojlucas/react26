@@ -1,31 +1,33 @@
 function NuevoProducto() {
   return (
-     <section id="contacto" class="contact-section">
+     <section id="nuevo-producto" class="contact-section">
     <div class="section-container">
       <div class="section-header">
-        <h2 class="section-title">Contacto</h2>
-        <p class="section-subtitle">Estamos aqui para ayudarte</p>
+        <h2 class="section-title">Nuevo producto</h2>
+        <p class="section-subtitle">Agregar nuevo producto</p>
       </div>
       <form class="contact-form" id="contactForm">
-        <div class="form-row">
+       
           <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <label for="name">Nombre del producto</label>
+            <input type="text" id="name" name="name" placeholder="Nombre del producto" required />
           </div>
+           <div class="form-row">
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            <label for="price">Precio</label>
+            <input type="text" id="price" name="price" placeholder="Precio del producto" required />
+          </div>
+           <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="text" id="stock" name="stock" placeholder="Cantidad en stock" required />
           </div>
         </div>
+        
         <div class="form-group">
-          <label for="subject">Asunto</label>
-          <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required />
+          <label for="message">Imagen</label>
+         <input type="text" id="image" name="image" placeholder="URL de la imagen del producto" required />
         </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        <button type="submit" class="submit-btn">Guardar producto</button>
       </form>
     </div>
   </section>
